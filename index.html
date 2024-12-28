@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transpositor de Tonalidades</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Transpositor de Tonalidades</h1>
+    <label for="origin">Instrumento de Origen:</label>
+    <select id="origin">
+      <option value="piano">Piano</option>
+      <option value="alto">Saxofón Alto</option>
+      <option value="trumpet">Trompeta</option>
+    </select>
+
+    <label for="destination">Instrumento de Destino:</label>
+    <select id="destination">
+      <option value="piano">Piano</option>
+      <option value="alto">Saxofón Alto</option>
+      <option value="trumpet">Trompeta</option>
+    </select>
+
+    <label for="key">Tonalidad:</label>
+    <select id="key">
+        <option value="C">Do (C)</option>
+        <option value="C#">Do# / Reb (C# / Db)</option>
+        <option value="D">Re (D)</option>
+        <option value="D#">Re# / Mib (D# / Eb)</option>
+        <option value="E">Mi (E)</option>
+        <option value="F">Fa (F)</option>
+        <option value="F#">Fa# / Solb (F# / Gb)</option>
+        <option value="G">Sol (G)</option>
+        <option value="G#">Sol# / Lab (G# / Ab)</option>
+        <option value="A">La (A)</option>
+        <option value="A#">La# / Sib (A# / Bb)</option>
+        <option value="B">Si (B)</option>
+    </select>    
+    <label for="mode">Modo:</label>
+    <select id="mode">
+      <option value="major">Mayor</option>
+      <option value="minor">Menor</option>
+    </select>
+
+    <button onclick="transposeKey()">Transportar</button>
+
+    <div class="output" id="output"></div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
